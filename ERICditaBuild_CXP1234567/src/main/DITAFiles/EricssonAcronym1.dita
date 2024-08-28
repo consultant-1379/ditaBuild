@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="glossentry_q3g_pzx_sl">
+	<glossterm>Alphabet</glossterm>
+    <glossdef>ABC is the alphabet. this is changed for GIT testing</glossdef>
+    <glossBody>
+        <glossSurfaceForm>Any Body Can</glossSurfaceForm>
+        <glossAlt>
+            <glossAcronym>ABC</glossAcronym>
+        </glossAlt>
+    </glossBody>
+</glossentry>

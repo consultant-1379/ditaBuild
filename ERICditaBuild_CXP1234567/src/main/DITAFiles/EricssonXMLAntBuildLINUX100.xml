@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="Ericsson Information Model dita files to current publishing 2" default="dita2pdf" basedir=".">
+    
+    <property name="dita.dir" location="/root/Programs/ditaot/DITA-OT1.8.M2"/>
+    
+
+    
+	<target name="xhtml" description="XHTML on LINUX">
+		<ant antfile="${dita.dir}/build.xml">
+			<property name="args.input" value="./E.ditamap"/>
+			<property name="args.gen.task.lbl" value="YES"/>
+			<property name="args.rellinks" value="nofamily"/>
+			<property name="output.dir" value="./GITxhtml"/>
+			<property name="transtype" value="xhtml"/>
+			<property name="clean.temp" value="no"/>
+		</ant>
+	</target>	
+	
+	
+		<target name="dita2pdf" description="PDF on LINUX">
+		<ant antfile="${dita.dir}/build.xml">
+			<property name="args.input" value="./E.ditamap"/>
+			<property name="args.gen.task.lbl" value="YES"/>
+			<property name="args.rellinks" value="nofamily"/>
+			<property name="output.dir" value="./GITpdf"/>
+			<property name="transtype" value="pdf"/>
+			<property name="clean.temp" value="no"/>
+		</ant>
+	</target>
+	
+</project>
